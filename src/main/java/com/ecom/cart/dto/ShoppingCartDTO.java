@@ -9,6 +9,7 @@ public class ShoppingCartDTO {
 	private String sessionId;
 	private Date date;
 	private List<ProductDetailsDTO> productsList;
+	private CheckoutDetailsDTO checkoutDetails;
 
 	public Long getCustomerId() {
 		return customerId;
@@ -40,6 +41,14 @@ public class ShoppingCartDTO {
 
 	public void setProductsList(List<ProductDetailsDTO> productsList) {
 		this.productsList = productsList;
+	}
+
+	public CheckoutDetailsDTO getCheckoutDetails() {
+		return checkoutDetails;
+	}
+
+	public void setCheckoutDetails(CheckoutDetailsDTO checkoutDetails) {
+		this.checkoutDetails = checkoutDetails;
 	}
 
 	@Override
